@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+     /* header  */
+header{
+    background-color:#111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* -----nav------  */
+nav .container{
+    width: 90%;
+    margin: auto;
+}
+nav .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    align-items: center;
+}
+nav .row .logo h2{
+    font-size: 25px;
+    color: orangered;
+    font-weight: bold;
+    & span{
+        color: rgba(255, 68, 0, 0.545);
+    }
+}
+nav .row .bars{
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+    color: orangered;
+}
+nav .row .Theme{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: aliceblue;
+}
+nav .row .nav-links ul{
+    display: flex;
+    list-style-type: none;
+}
+nav .row .nav-links ul li{
+    padding: 10px;
+    margin-right: 5px;
+    position: relative;
+}
+nav .row .nav-links ul li a{
+    text-decoration: none;
+    color: grey;
+}
+nav .row .nav-links ul li a:hover{
+    color: orangered;
+}
+nav .row .nav-links ul li a.active{
+    color: orangered;
+}
+nav .row .nav-links ul li:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: orangered;
+}
+nav .row .nav-links ul li::before{
+    content:"";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: aquamarine;
+    cursor: pointer;
+    color: orangered;
+}
+nav .row .nav-links ul li::after{
+    content:"";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 0;
+    right: 0;
+    background-color: aquamarine;
+    cursor: pointer;
+    color: orangered;
+}
+nav .row .nav-links ul li:hover:after ,
+nav .row .nav-links ul li:hover::before{
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+}
+/* ---------- main ------------ */
+main{
+    padding-top: 60px;
+}
+main #section-1 .container{
+    width: 90%;
+    margin: auto;
+}
+/* ----------Section-1---------- */
+main #section-1 img{
+    width: 100%;
+}
+/* ----------Section-2---------- */
+main #section-2 .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+main #section-2 .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main #section-2 .container .row div{
+    width: 15%;   
+}
+main #section-2 .container .row div img{
+    width: 100%;
+}
+/* ----------Section-3---------- */
+main #section-3 .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+main #section-3 .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main #section-3 .container .row .card{
+    width: 30%;
+}
+main #section-3 .container .row .card .row{
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+main #section-3 .container .row .card .logo{
+    /* width: 20%; */
+    font-size: 30px;
+    color: orangered;
+}
+main #section-3 .container .row .card h2{
+    /* width: 80%; */
+    font-size: 25px;
+    color: orangered;
+    padding-left: 15px;
+}
+main #section-3 .container .row .card p{
+    margin-bottom: 20px;
+}
+main #section-3 .container .row .card .btn{
+    background-color: orangered;
+    border: 0px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+/* ----------Section-4---------- */
+main #section-4 .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+main #section-4 .container .row{
+    display: flex;
+}
+main #section-4 .container .row h3{
+    width: 20%;
+}
+main #section-4 .container .row .hr{
+    background-color: lightgray;
+    width: 100%;
+    height: 20px;
+}
+/* ----------Section-5---------- */
+main #section-5 .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+main #section-5 .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main #section-5 .container .row .protfolio{
+    width: 22%;
+    border: 1px solid grey;
+}
+main #section-5 .container .row .protfolio img{
+    width: 100%;
+}
+main #section-5 .container .row .protfolio h4{
+    color: grey;
+    padding: 0px 5px;
+}
+main #section-5 .container .row .protfolio p{
+    color: orangered;
+    padding: 0px 5px;
+}
+/* ------- Footer -------- */
+footer{
+    background-color: rgba(255, 65, 0, 0.5);
+}
+footer .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: orangered;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+footer .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .container .row div{
+    width: 30%;
+    padding: 20px 15px;
+}
+footer .container .row div h3{
+    color: white;
+    margin-bottom: 20px;
+}
+footer .container .row div p{
+    color: antiquewhite;
+    margin-bottom: 20px;
+}
+footer .container .row div p i{
+    font-size: 20px;
+    text-align: right;
+    cursor: pointer;
+    color: black;
+    padding: 5px;
+}

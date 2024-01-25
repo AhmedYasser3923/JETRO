@@ -1,0 +1,111 @@
+@media (max-width: 1140px) {
+    main #section-4 .container .row h3{
+        width: 25%;
+    }
+}
+@media (max-width: 992px) {
+    main #section-4 .container .row h3{
+        width: 30%;
+    }
+}
+/* ------- Tablets ------- */
+@media (max-width: 772px) {
+    nav .row{
+        flex-wrap: wrap;
+    }
+    nav .row .nav-links{
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+    } 
+    nav .row .nav-links ul{
+        text-align: center;
+        display: block;
+    }
+    nav .row .bars{
+        display: block;
+    }
+    main #section-2 .container .row div{
+        width: 30%;
+        margin-bottom: 15px;   
+    }
+    main #section-3 .container .row {
+        justify-content: space-around;
+    }
+    main #section-3 .container .row .card{
+        width: 45%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    main #section-4 .container .row h3{
+        width: 40%;
+    }
+    main #section-5 .container .row .protfolio{
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    footer .container .row{
+        display: flex;
+        justify-content: center;
+    }
+    footer .container .row div{
+        width: 60%;
+        padding: 20px 15px;
+        text-align: center;
+    }
+}
+
+/* ----- mobiles ----- */
+@media (max-width: 576px) {
+    nav .container{
+        width: 100%;
+        padding: 0px 15px;
+    }
+    main #section-1 .container{
+        width: 100%;
+        padding: 0px 15px;
+    }
+    main #section-2 .container{
+        width: 100%;
+        padding: 0px 15px;
+    }
+    main #section-2 .container .row div{
+        width: 48%;   
+    }
+    
+    main #section-3 .container{
+        width: 100%;
+        padding: 0px 15px;
+    }
+    main #section-3 .container .row .card{
+        width: 90%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    main #section-4 .container .row h3{
+        width: 90%;
+        height: 7px;
+    }
+    main #section-5 .container .row{
+        justify-content: center;
+    }
+    main #section-5 .container .row .protfolio{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    footer .container{
+        width: 95%;
+    }
+    footer .container .row div{
+        width: 90%;
+        padding: 20px 15px;
+        text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    main #section-4 .container .row h3{
+        width:90%;
+        font-size: 15px;
+        height: 5px;
+    }
+}
